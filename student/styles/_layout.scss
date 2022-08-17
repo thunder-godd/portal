@@ -1,0 +1,78 @@
+// layers
+.layout {
+	background: rgb(3, 0, 78);
+	background: linear-gradient(
+		15deg,
+		rgba(3, 0, 78, 0.9892156691778273) 50%,
+		rgba(4, 57, 241, 1) 90%
+	);
+	min-height: 100vh;
+	position: relative;
+	.el {
+		position: absolute;
+		z-index: 1;
+		opacity: 0.7;
+		// border: 1px solid red;
+	}
+	.el1 {
+		top: 10%;
+		left: 5%;
+	}
+	.el2 {
+		left: 70%;
+		bottom: 3%;
+		position: fixed;
+	}
+	.el3 {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%);
+		opacity: 0.7;
+	}
+}
+.page {
+	padding: 0.5rem;
+	main {
+		// border: 1px solid red;
+		.title {
+			text-align: center;
+		}
+	}
+}
+.glass {
+	// border: 1px solid red;
+	border-radius: 1rem;
+	z-index: 1000;
+}
+.glass-1 {
+	/* From https://css.glass */
+	background: rgba(17, 253, 197, 0.18);
+	border-radius: 12px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(17, 253, 197, 0.33);
+}
+.glass-2 {
+	// /* From https://css.glass */
+	background: rgba(196, 20, 255, 0.28);
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8.8px);
+
+	border: 1px solid rgba(191, 0, 255, 0.14);
+}
+.grt {
+	// border: 1px solid red;
+	padding: 0 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	.dets {
+		// border: 1px solid red;
+		display: flex;
+		flex-direction: column;
+	}
+	.usr {
+		align-self: center;
+		width: 30%;
+	}
+}

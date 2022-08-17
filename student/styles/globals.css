@@ -1,0 +1,247 @@
+html,
+body {
+  background-color: #1e1e1e;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.layout {
+  background: #03004e;
+  background: linear-gradient(15deg, rgba(3, 0, 78, 0.989216) 50%, #0439f1 90%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.layout .el {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.layout .el1 {
+  top: 10%;
+  left: 5%;
+}
+
+.layout .el2 {
+  left: 70%;
+  bottom: 3%;
+  position: fixed;
+}
+
+.layout .el3 {
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  opacity: 0.7;
+}
+
+.page {
+  padding: 0.5rem;
+}
+
+.page main .title {
+  text-align: center;
+}
+
+.glass {
+  border-radius: 1rem;
+  z-index: 1000;
+}
+
+.glass-1 {
+  /* From https://css.glass */
+  background: rgba(17, 253, 197, 0.18);
+  border-radius: 12px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border: 1px solid rgba(17, 253, 197, 0.33);
+}
+
+.glass-2 {
+  background: rgba(196, 20, 255, 0.28);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(8.8px);
+          backdrop-filter: blur(8.8px);
+  border: 1px solid rgba(191, 0, 255, 0.14);
+}
+
+.grt {
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grt .dets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grt .usr {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 30%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem;
+  max-width: 100vw;
+}
+
+.navbar .f-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 7rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .f-items .hide {
+  display: none;
+}
+
+.navbar .f-items .show {
+  display: block;
+  border: 1px solid red;
+  position: absolute;
+}
+
+form {
+  max-width: 100vw;
+  min-width: 10rem;
+  padding: 2rem;
+}
+
+form h3 {
+  text-align: center;
+}
+
+form .inpts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+form .inpts .form-inpt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form .inpts .form-inpt label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+form .inpts .form-inpt .inpt {
+  background-color: #03004e;
+  border: 1px solid rgba(17, 253, 197, 0.18);
+  padding: 0.65rem 0;
+  border-radius: 0.25rem;
+  color: #11fdc5;
+}
+
+form .inpts .form-inpt .inpt:focus {
+  outline: none;
+  border: 1px solid #11fdc5;
+}
+
+form button {
+  border: 1px solid red;
+}
+
+.lgn-frm {
+  border: 1px solid red;
+}
+
+.btn {
+  padding: 0.5rem;
+}
+
+.btn-1 {
+  background: rgba(8, 0, 255, 0.4);
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(17, 253, 197, 0.18);
+  width: 70%;
+}
+
+.btn-3 {
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+  color: #ffffff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.grid {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.navs {
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.tbls {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+/*# sourceMappingURL=globals.css.map */

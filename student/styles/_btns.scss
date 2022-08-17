@@ -1,0 +1,21 @@
+.btn {
+	padding: 0.5rem;
+}
+.btn-1 {
+	background: rgba(8, 0, 255, 0.4);
+	color: $txt-1;
+
+	backdrop-filter: blur(10px);
+
+	border: 1px solid $gl-1;
+	width: 70%;
+}
+.btn-3 {
+	position: absolute;
+	bottom: 7%;
+	right: 7%;
+	color: $txt-1;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}

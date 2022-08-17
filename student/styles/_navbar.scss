@@ -1,0 +1,23 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	max-width: 100vw;
+	.f-items {
+		display: flex;
+		//border: 1px solid red;
+		min-width: 7rem;
+		justify-content: space-between;
+		.hide {
+			display: none;
+		}
+		.show {
+			display: block;
+			border: 1px solid red;
+			position: absolute;
+		}
+		// .nav-link {
+		// 	display: none;
+		// }
+	}
+}
